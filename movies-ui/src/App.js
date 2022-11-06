@@ -15,7 +15,7 @@ import { config } from './Constants'
 
 function App() {
   const keycloak = new Keycloak({
-    url: `${config.url.KEYCLOAK_BASE_URL}`,
+    url: `${config.url.KEYCLOAK_BASE_URL}/auth`,
     realm: "company-services",
     clientId: "movies-app"
   })

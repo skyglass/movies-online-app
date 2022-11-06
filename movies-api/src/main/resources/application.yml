@@ -19,6 +19,17 @@ jwt:
       resource-id: movies-app
       principal-attribute: preferred_username
 
+keycloak:
+  auth-server-url: http://localhost:8080
+  realm: company-services
+  resource: movies-app
+  ssl-required: external
+  principal-attribute: preferred_username
+  use-resource-role-mappings: true
+
+keycloak-ext:
+  redirect-url: http://localhost:3000/*
+
 app:
   cors:
     allowed-origins: http://localhost:3000

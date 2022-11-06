@@ -12,6 +12,7 @@ services:
 
   mysql:
     image: mysql:5.7.38
+    platform: linux/amd64
     container_name: mysql
     ports:
       - "3306:3306"
@@ -25,6 +26,7 @@ services:
 
   keycloak:
     image: quay.io/keycloak/keycloak:18.0.2
+    platform: linux/amd64
     container_name: keycloak
     environment:
       - KEYCLOAK_ADMIN=admin
