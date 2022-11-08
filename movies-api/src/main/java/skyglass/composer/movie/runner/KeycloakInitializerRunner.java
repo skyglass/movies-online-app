@@ -22,7 +22,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import skyglass.composer.movie.security.WebSecurityConfig;
+import skyglass.composer.movie.config.WebSecurityConfig;
 
 @Slf4j
 @RequiredArgsConstructor
